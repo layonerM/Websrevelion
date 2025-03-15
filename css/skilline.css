@@ -1,0 +1,101 @@
+/*primary color*/
+.bg-cream {
+    background-color: #cac9c8;
+}
+
+/*font*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animacion-entrada {
+    animation: slideIn 0.8s ease forwards;
+}
+.whatsapp-button {
+    display: flex; /* Para alinear el ícono y el texto */
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: white; /* Color del texto */
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    font-size: 1.2em; /* Tamaño de fuente */
+    padding: 12px 24px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
+
+.whatsapp-button i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif; 
+    color: black;
+
+}
+.sombra {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.bg-yellow-500 {
+    background-color: #F48C06;
+}
+.text-yellow-500 {
+    color: #af873d; /* Un tono dorado más brillante */
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra más suave */
+    font-size: inherit; /* Mantener el tamaño de fuente original */
+    padding: 5px; /* Espaciado interno para dar un poco de aire */
+    font-family: 'Poppins', sans-serif; /* Usar la fuente Poppins */
+    transition: transform 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.text-yellow-500:hover {
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+    color: #dddab2; /* Color más claro al pasar el mouse */
+}
+.floating { 
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+} 
+@keyframes floating { 
+    0% { transform: translate(0, 0px); } 
+    50% { transform: translate(0, 8px); } 
+    100% { transform: translate(0, -0px); }  
+} 
+.floating-4 { 
+    animation-name: floating; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+} 
+@keyframes floating-4 { 
+    0% { transform: translate(0, 0px); } 
+    50% { transform: translate(0, 8px); } 
+    100% { transform: translate(0, -0px); }  
+}
+.text-darken {
+    color: #2F327D;
+}
