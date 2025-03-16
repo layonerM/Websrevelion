@@ -61,7 +61,7 @@ body {
     background-color: #F48C06;
 }
 .text-yellow-500 {
-    color: #af873d; /* Un tono dorado más brillante */
+    color: #58abc0; /* Un tono dorado más brillante */
 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra más suave */
     font-size: inherit; /* Mantener el tamaño de fuente original */
@@ -98,4 +98,11 @@ body {
 }
 .text-darken {
     color: #2F327D;
+}
+@media (max-width: 400px) {
+    .custom-responsive {
+        font-size: 1.5rem; /* Tamaño más pequeño en pantallas menores a 400px */
+        text-align: center; /* Asegura que el texto esté centrado */
+        display: block;
+    }
 }
