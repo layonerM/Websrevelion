@@ -80,6 +80,21 @@ body {
     animation-iteration-count: infinite; 
     animation-timing-function: ease-in-out;
 } 
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.moving-image {
+    animation: moveImage 5s ease-in-out infinite;
+}
 @keyframes floating { 
     0% { transform: translate(0, 0px); } 
     50% { transform: translate(0, 8px); } 
@@ -101,8 +116,42 @@ body {
 }
 @media (max-width: 400px) {
     .custom-responsive {
-        font-size: 1.5rem; /* Tamaño más pequeño en pantallas menores a 400px */
-        text-align: center; /* Asegura que el texto esté centrado */
+        font-size: 1.6rem; /* Tamaño adecuado para pantallas pequeñas */
+        text-align: center; /* Centrado para una presentación ordenada */
         display: block;
+        padding: 0 1rem; /* Espaciado adecuado para evitar que el texto toque los bordes */
+        line-height: 1.8; /* Mejora la legibilidad con más espaciado entre líneas */
+        margin: 0 auto; /* Centrado del bloque */
+        font-family: 'Poppins', sans-serif; /* Fuente moderna y limpia */
+        color: transparent; /* Hacemos el texto transparente para aplicar el gradiente */
+        font-weight: 600; /* Peso medio para una lectura clara */
+        text-transform: uppercase; /* Hace que el texto se vea más impactante */
+        letter-spacing: 1px; /* Espaciado de letras para claridad */
+        background: linear-gradient(90deg, #3B82F6, #134d29); /* Gradiente de azul y morado */
+        -webkit-background-clip: text; /* Hace que el gradiente se aplique solo al texto */
+        background-clip: text; /* Para que el gradiente se vea en el texto */
+    }
+
+    .custom-responsive span {
+        font-size: 2rem; /* Aumentamos el tamaño de las palabras clave */
+        font-weight: 700; /* Resaltamos la palabra clave */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4), 0 0 15px rgba(59, 130, 246, 0.7), 0 0 25px rgba(59, 130, 246, 0.5); /* Sombras para dar profundidad */
+    }
+
+    /* Animación de movimiento constante */
+    .custom-responsive {
+        animation: moveConstantly 4s infinite alternate ease-in-out;
+    }
+
+    @keyframes moveConstantly {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 }
